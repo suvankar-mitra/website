@@ -19,6 +19,7 @@ public class SecurityConfig {
                         .requestMatchers("/").permitAll()
                         .requestMatchers("/images/**").permitAll()
                         .requestMatchers("/css/**").permitAll()
+                        .requestMatchers("/Suvankar_Mitra_Resume_India.pdf").permitAll()
                         .anyRequest().denyAll())
                 .httpBasic(Customizer.withDefaults())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
