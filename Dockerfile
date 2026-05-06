@@ -1,5 +1,5 @@
 # Use a minimal official OpenJDK image
-FROM eclipse-temurin:17-jre
+FROM eclipse-temurin:21-jre
 
 # Create a non-root user
 RUN useradd -ms /bin/bash springuser
@@ -8,10 +8,7 @@ RUN useradd -ms /bin/bash springuser
 WORKDIR /app
 
 # Copy the JAR file into the container
-COPY target/app.jar app.jar
-
-# Change ownership of the app files
-RUN chown -R springuser:springuser /app
+COPY --chown=springuser:springuser target/app.jar app.jar
 
 # Switch to the non-root user
 USER springuser
@@ -20,4 +17,4 @@ USER springuser
 EXPOSE 8800
 
 # Run the app with some sane default JVM memory settings
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75.0", "-jar", "app.jar"]
