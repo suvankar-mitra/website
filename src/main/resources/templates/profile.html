@@ -1,385 +1,561 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Suvankar Mitra</title>
+    <meta name="color-scheme" content="light dark" />
+    <meta
+            name="description"
+            content="Suvankar Mitra — Senior Backend Engineer specialising in Java, Spring Boot, financial systems, and reliable backend infrastructure."
+    />
+    <title>Suvankar Mitra · Backend Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+    />
     <link href="/css/main.css" rel="stylesheet" />
 </head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<body class="bg-gray-50 text-gray-800 font-sans">
+<header class="site-header">
+    <div class="nav-shell">
+        <a class="wordmark" href="#top" aria-label="Suvankar Mitra home">
+            <span class="wordmark-mark">SM</span>
+            <span class="wordmark-name">Suvankar Mitra<span class="wordmark-period">.</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#api">APIs</a>
+            <a href="https://api.suvankar.cc/" target="_blank" rel="noopener noreferrer">API Platform ↗</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path
+                        d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"
+                ></path>
+            </svg>
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.9 13A8.5 8.5 0 0 1 11 3.1 8.6 8.6 0 1 0 20.9 13Z"></path>
+            </svg>
+            <span class="theme-label">Dark</span>
+        </button>
+    </div>
+</header>
 
-    <div class="max-w-4xl mx-auto px-6 py-12">
-
-        <header class="mb-12">
-            <h1 class="text-4xl font-extrabold text-blue-600 mb-2">Hello, I'm Suvankar</h1>
-            
-            <p class="text-blue-600 font-semibold mb-2">Senior Backend Engineer · Java · Spring Boot · Financial Systems</p>
-
-            <div class="flex flex-wrap gap-4 mt-4 text-sm text-gray-600">
-                <span>Bengaluru, India</span>
-                <a href="mailto:suvankar.for.work@gmail.com" class="text-blue-500 hover:underline">
-                    suvankar.for.work@gmail.com
-                </a>
-                <a href="https://www.linkedin.com/in/suvankar-mitra/" target="_blank" rel="noopener"
-                    class="text-blue-500 hover:underline">
-                    LinkedIn
-                </a>
-                <a href="https://github.com/suvankar-mitra" target="_blank" rel="noopener"
-                    class="text-blue-500 hover:underline">
-                    GitHub
-                </a>
-            </div>
-        </header>
-
-        <section id="about" class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4 border-b-2 border-blue-600 inline-block">About Me</h2>
-            <p class="text-gray-700 leading-relaxed max-w-prose">
-                Senior Backend Engineer and Technology Lead with 10+ years of experience building and stabilising
-                mission-critical financial systems at Goldman Sachs via Infosys. I specialise in Java, Spring Boot,
-                SQL performance engineering, large-scale system modernization, and AWS-hosted infrastructure.
+<main id="main" class="page-shell">
+    <section class="hero section-anchor" id="top">
+        <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> Backend engineering · Bengaluru, India</p>
+            <h1>Building systems<br /><span>that hold up.</span></h1>
+            <p class="hero-summary">
+                I'm Suvankar — a Backend-focused engineer with 10+ years in financial systems, data lifecycle
+                engineering, and production reliability — now looking for the next chapter.
             </p>
-            <p class="text-gray-700 leading-relaxed max-w-prose mt-4">
-                I have designed production-critical systems including a 5TB+ database archival architecture and a trade
-                identifier life-cycle solution preventing settlement halt. I also build modern Java 21 / Spring Boot
-                3.x applications with REST APIs, JWT auth, and PostgreSQL. IEEE-published researcher, open to Senior
-                Backend Engineer, Tech Lead, and Architect roles across fintech, banking tech, and product companies.
-            </p>
-
-            <div class="flex flex-row items-center gap-4 mt-4 mb-2">
-                <a href="https://github.com/suvankar-mitra" target="_blank" rel="noopener" title="GitHub">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-                        class="w-8 h-8" alt="GitHub">
+            <div class="hero-actions">
+                <a class="button button-primary" href="/Suvankar_Mitra_Resume_India.pdf" download>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 3v12m-5-5 5 5 5-5M4 17v3h16v-3"></path>
+                    </svg>
+                    Download résumé
                 </a>
-                <a href="https://www.linkedin.com/in/suvankar-mitra/" target="_blank" rel="noopener" title="LinkedIn">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
-                        class="w-8 h-8" alt="LinkedIn">
-                </a>
+                <a class="text-link" href="#projects">Explore projects <span aria-hidden="true">↘</span></a>
             </div>
-
-            <p>
-                <a href="/Suvankar_Mitra_Resume_India.pdf"
-                    class="inline-block mt-4 px-10 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
-                    download>Download Resume</a>
-            </p>
-        </section>
-
-        <section id="highlights" class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 border-blue-600 inline-block">Career Highlights</h2>
-            <div class="grid gap-4 sm:grid-cols-2">
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-lg font-semibold text-blue-600 mb-2">Financial Systems Ownership</h3>
-                    <p class="text-gray-700">
-                        Primary technical owner for the core infrastructure layer of a high-volume post-trade settlement
-                        platform supporting global equity and fixed-income operations.
-                    </p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-lg font-semibold text-blue-600 mb-2">Database Architecture</h3>
-                    <p class="text-gray-700">
-                        Architected a 5TB+ trading database purge and archival system balancing regulatory retention,
-                        sustained query performance, and storage efficiency.
-                    </p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-lg font-semibold text-blue-600 mb-2">Reliability Engineering</h3>
-                    <p class="text-gray-700">
-                        Reduced production incidents by 35% through SQL query plan optimisation, automated retry logic,
-                        and systematic root cause analysis.
-                    </p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow">
-                    <h3 class="text-lg font-semibold text-blue-600 mb-2">Modernisation Leadership</h3>
-                    <p class="text-gray-700">
-                        Led modernisation of 100+ legacy services across CVS to Git migration, GitLab CI/CD, IaC-based
-                        RHEL 7/8 provisioning, and operational handover.
-                    </p>
-                </div>
+            <div class="hero-links">
+                <a href="mailto:suvankar.for.work@gmail.com">suvankar.for.work@gmail.com</a>
+                <span class="link-separator">/</span>
+                <a href="https://www.linkedin.com/in/suvankar-mitra/" target="_blank" rel="noopener noreferrer"
+                >LinkedIn ↗</a
+                >
+                <span class="link-separator">/</span>
+                <a href="https://github.com/suvankar-mitra" target="_blank" rel="noopener noreferrer"
+                >GitHub ↗</a
+                >
             </div>
-        </section>
+        </div>
+        <aside class="hero-aside" aria-label="Professional snapshot">
+            <div class="aside-topline"><span>PROFILE / 001</span><span>2026</span></div>
+            <div class="profile-monogram">SM<span>.</span></div>
+            <p class="aside-role">Senior Backend Engineer</p>
+            <p class="aside-specialty">Java · Spring Boot · Financial Systems</p>
+            <div class="aside-rule"></div>
+            <div class="aside-meta"><span>Experience</span><strong>10+ years</strong></div>
+            <div class="aside-meta"><span>Focus</span><strong>Backend &amp; data</strong></div>
+            <div class="aside-meta"><span>Currently building</span><strong>Open-source APIs</strong></div>
+            <div class="aside-bottom"><span class="tiny-square"></span> OPEN TO THE NEXT CHAPTER</div>
+        </aside>
+    </section>
 
-        <section id="skills" class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 border-blue-600 inline-block">Tools &
-                Technologies</h2>
+    <section class="impact-strip" aria-label="Career highlights">
+        <div class="impact-item">
+                    <span class="impact-value">35<span>%</span></span
+                    ><span class="impact-label">Fewer operational support incidents</span>
+        </div>
+        <div class="impact-item">
+                    <span class="impact-value">100<span>+</span></span
+                    ><span class="impact-label">Legacy services modernised</span>
+        </div>
+        <div class="impact-item">
+                    <span class="impact-value">5</span
+                    ><span class="impact-label">Engineers mentored and coordinated</span>
+        </div>
+        <div class="impact-item">
+                    <span class="impact-value">2D</span
+                    ><span class="impact-label">Business-date and intraday temporal snapshots</span>
+        </div>
+    </section>
 
-            <div class="space-y-2">
-                <div>
-                    
-                    <h3 class="text-lg font-bold text-gray-900 mb-3 border-b-2 border-blue-600 inline-block">Languages</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="inline-flex items-center px-3 py-1 bg-blue-100 text-black-800 rounded-full text-sm font-medium">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
-                                alt="Java" class="w-4 h-4 mr-2"> Java 21
-                        </span>
-                        <span class="inline-flex items-center px-3 py-1 bg-gray-200 text-black-800 rounded-full text-sm font-medium">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg"
-                                alt="Shell Script" class="w-4 h-4 mr-2"> Shell Script
-                        </span>
-                        <span class="inline-flex items-center px-3 py-1 bg-gray-200 text-black-800 rounded-full text-sm font-medium">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg"
-                                alt="SQL" class="w-4 h-4 mr-2"> SQL / T-SQL
-                        </span>
-                        <span class="inline-flex items-center px-3 py-1 bg-blue-100 text-black-800 rounded-full text-sm font-medium">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
-                                alt="C" class="w-4 h-4 mr-2"> C
-                        </span>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-3 border-b-2 border-blue-600 inline-block">Backend & APIs</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="inline-flex items-center px-3 py-1 bg-green-100 text-black-800 rounded-full text-sm font-medium">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
-                                alt="Spring Boot" class="w-4 h-4 mr-2"> Spring Boot 3.x
-                        </span>
-                        <span class="inline-flex items-center px-3 py-1 bg-green-100 text-black-800 rounded-full text-sm font-medium">Spring Security</span>
-                        <span class="inline-flex items-center px-3 py-1 bg-green-100 text-black-800 rounded-full text-sm font-medium">Spring Data JPA</span>
-                        <span class="inline-flex items-center px-3 py-1 bg-blue-100 text-black-800 rounded-full text-sm font-medium">REST APIs</span>
-                        <span class="inline-flex items-center px-3 py-1 bg-blue-100 text-black-800 rounded-full text-sm font-medium">JWT</span>
-                        <span class="inline-flex items-center px-3 py-1 bg-orange-100 text-black-800 rounded-full text-sm font-medium">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hibernate/hibernate-original.svg"
-                                alt="Hibernate" class="w-4 h-4 mr-2"> Hibernate
-                        </span>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="text-lg font-bold text-gray-900 mb-3 border-b-2 border-blue-600 inline-block">Data, DevOps & Infrastructure</h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="inline-flex items-center px-3 py-1 bg-blue-100 text-black-800 rounded-full text-sm font-medium">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-                                alt="PostgreSQL" class="w-4 h-4 mr-2"> PostgreSQL
-                        </span>
-                        <span class="inline-flex items-center px-3 py-1 bg-gray-200 text-black-800 rounded-full text-sm font-medium">Sybase ASE</span>
-                        <span class="inline-flex items-center px-3 py-1 bg-gray-200 text-black-800 rounded-full text-sm font-medium">Query Optimisation</span>
-                        <span class="inline-flex items-center px-3 py-1 bg-gray-200 text-black-800 rounded-full text-sm font-medium">Execution Plans</span>
-                        <span class="inline-flex items-center px-3 py-1 bg-gray-200 text-black-800 rounded-full text-sm font-medium">Data Archival</span>
-                        <span class="inline-flex items-center px-3 py-1 bg-orange-100 text-black-800 rounded-full text-sm font-medium">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg"
-                                alt="GitLab CI/CD" class="w-4 h-4 mr-2"> GitLab CI/CD
-                        </span>
-                        <span class="inline-flex items-center px-3 py-1 bg-orange-100 text-black-800 rounded-full text-sm font-medium">Git</span>
-                        <span class="inline-flex items-center px-3 py-1 bg-orange-100 text-black-800 rounded-full text-sm font-medium">Maven</span>
-                        <span class="inline-flex items-center px-3 py-1 bg-blue-100 text-black-800 rounded-full text-sm font-medium">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original.svg"
-                                alt="IaC" class="w-4 h-4 mr-2"> IaC
-                        </span>
-                        <span class="inline-flex items-center px-3 py-1 bg-gray-200 text-black-800 rounded-full text-sm font-medium">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
-                                alt="Linux" class="w-4 h-4 mr-2"> Linux RHEL 7/8
-                        </span>
-                        <span class="inline-flex items-center px-3 py-1 bg-blue-100 text-black-800 rounded-full text-sm font-medium">AWS-hosted Infrastructure</span>
-                        <span class="inline-flex items-center px-3 py-1 bg-blue-100 text-black-800 rounded-full text-sm font-medium">Cloud Migration</span>
-                        <span class="inline-flex items-center px-3 py-1 bg-red-100 text-black-800 rounded-full text-sm font-medium">Flyway</span>
-                        <span class="inline-flex items-center px-3 py-1 bg-blue-100 text-black-800 rounded-full text-sm font-medium">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
-                                alt="Docker" class="w-4 h-4 mr-2"> Docker / DevContainer
-                        </span>
-                        <span class="inline-flex items-center px-3 py-1 bg-green-100 text-black-800 rounded-full text-sm font-medium">System Modernisation</span>
-                        <span class="inline-flex items-center px-3 py-1 bg-green-100 text-black-800 rounded-full text-sm font-medium">Incident Management</span>
-                        <span class="inline-flex items-center px-3 py-1 bg-green-100 text-black-800 rounded-full text-sm font-medium">Root Cause Analysis</span>
-                        <span class="inline-flex items-center px-3 py-1 bg-green-100 text-black-800 rounded-full text-sm font-medium">Agile / SDLC</span>
-                    </div>
-                </div>
+    <section class="content-section section-anchor" id="about">
+        <div class="section-heading">
+            <div>
+                <p class="section-index">01 / OVERVIEW</p>
+                <h2>About me<span class="heading-period">.</span></h2>
             </div>
-        </section>
-
-        <section id="experience" class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 border-blue-600 inline-block">Professional Experience</h2>
-            <div class="bg-white p-6 rounded-lg shadow">
-                <div class="mb-2">
-                    <div>
-                        <h3 class="text-xl font-semibold text-blue-600">Technology Lead</h3>
-                        <p class="text-gray-700">Infosys Ltd. · Client: Goldman Sachs, Bengaluru</p>
-                    </div>
-                    <p class="text-gray-600 text-sm font-medium">Dec 2015 - Present</p>
-                </div>
-                <p class="text-gray-700 mb-4">
-                    High-volume post-trade settlement platform supporting global equity and fixed-income operations on
-                    AWS-hosted infrastructure.
+            <p class="section-note">A little context before the code.</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-lead">
+                <p>
+                    Backend-focused Technology Lead with 10+ years of experience building and supporting
+                    mission-critical financial systems at Goldman Sachs through Infosys. My work spans
+                    transaction settlement, temporal data snapshotting, archival and purge workflows, database
+                    performance, legacy modernization, and production automation.
                 </p>
-                <ul class="list-disc pl-6 space-y-2 text-gray-700">
-                    <li>Designed trade identifier lifecycle management to prevent sequence exhaustion and avoid settlement interruption.</li>
-                    <li>Own bi-temporal trade data snapshotting for audit, reconciliation, and regulatory reporting at about 1.5M records/location/day during month-end.</li>
-                    <li>Built and led a 5-7 member engineering team across hiring, mentoring, knowledge sharing, and offshore-onshore delivery.</li>
-                    <li>Developed and optimised Java and SQL backend services supporting high-throughput transaction processing.</li>
-                </ul>
             </div>
-        </section>
-
-        <section id="education" class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 border-blue-600 inline-block">Education</h2>
-            <div class="grid gap-8 sm:grid-cols-2">
-                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
-                    <div class="mb-3">
-                        <h3 class="text-xl font-semibold text-blue-600">Master of Computer Applications (MCA)</h3>
-                        <p class="text-gray-700">Heritage Institute of Technology, Kolkata</p>
-                    </div>
-                    <p class="text-gray-600 text-sm font-medium mb-2">2012 - 2015</p>
-                    <p class="text-gray-700">GPA: 9.15</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
-                    <div class="mb-3">
-                        <h3 class="text-xl font-semibold text-blue-600">Bachelor of Science (Hons.) in Mathematics</h3>
-                        <p class="text-gray-700">Barasat Govt. College, Kolkata</p>
-                    </div>
-                    <p class="text-gray-600 text-sm font-medium mb-2">2009 - 2012</p>
-                    <p class="text-gray-700">Score: 73.75%</p>
+            <div class="about-detail">
+                <p>
+                    I have owned complex data-lifecycle workflows and integer-ID reuse systems designed to run
+                    safely alongside live transaction processing, with idempotency, durable progress tracking,
+                    and recovery from interrupted work. Outside my professional work, I build Java and Spring
+                    Boot APIs and self-hosted services.
+                </p>
+                <p>
+                    IEEE-published researcher, open to Senior Backend Engineer, Tech Lead, and Architect roles
+                    across fintech, banking tech, and product companies.
+                </p>
+                <div class="inline-links">
+                    <a href="https://github.com/suvankar-mitra" target="_blank" rel="noopener noreferrer"
+                    >GitHub <span>↗</span></a
+                    >
+                    <a
+                            href="https://www.linkedin.com/in/suvankar-mitra/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                    >LinkedIn <span>↗</span></a
+                    >
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects" class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 border-blue-600 inline-block">Open Source &
-                Personal Projects</h2>
-            <div class="grid gap-8 sm:grid-cols-2">
+    <section class="content-section section-anchor" id="highlights">
+        <div class="section-heading">
+            <div>
+                <p class="section-index">02 / SELECTED IMPACT</p>
+                <h2>Career highlights<span class="heading-period">.</span></h2>
+            </div>
+        </div>
+        <div class="highlight-grid">
+            <article class="highlight-card">
+                <span class="card-index">A01</span>
+                <h3>Financial systems ownership</h3>
+                <p>
+                    SME and technical owner for data snapshotting in a core transaction-settlement platform used
+                    in Private Wealth Management.
+                </p>
+            </article>
+            <article class="highlight-card">
+                <span class="card-index">A02</span>
+                <h3>Database architecture</h3>
+                <p>
+                    Built archival and reactivation capabilities across transaction-related data spread across
+                    multiple tables, plus coordinated global purge workflows across active and archived stores.
+                </p>
+            </article>
+            <article class="highlight-card">
+                <span class="card-index">A03</span>
+                <h3>Reliability engineering</h3>
+                <p>
+                    Reduced operational support incidents by 35% through automation of manual operational
+                    workflows and improvements to production tooling.
+                </p>
+            </article>
+            <article class="highlight-card">
+                <span class="card-index">A04</span>
+                <h3>Modernisation leadership</h3>
+                <p>
+                    Led modernization of 100+ services from Solaris and older RHEL environments to RHEL 7/8 and
+                    dynamic cloud-based Linux environments using Infrastructure as Code.
+                </p>
+            </article>
+        </div>
+    </section>
 
-                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
-                    <h3 class="text-xl font-semibold text-blue-600 mb-2">MoneyTrail</h3>
-                    <p class="text-gray-500 text-xs font-medium mb-2">Pre-release · Active development</p>
-                    <div class="flex flex-wrap gap-1 mt-1 mb-1">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
-                            alt="Java" class="w-4 h-4">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
-                            alt="Spring Boot" class="w-4 h-4">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-                            alt="PostgreSQL" class="w-4 h-4">
-                    </div>
-                    <p class="text-gray-700 mb-4">
-                        Self-hosted personal finance REST API in active development. Built with Java 21, Spring Boot
-                        3.5, Spring Security JWT, Spring Data JPA, PostgreSQL, Flyway, and Actuator. Implements
-                        double-entry bookkeeping with multi-user design. AGPL v3 licensed.
-                    </p>
-                    <a href="https://github.com/suvankar-mitra/moneytrail" target="_blank" rel="noopener"
-                        title="GitHub">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
-                            class="w-8 h-8" alt="GitHub">
-                    </a>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
-                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Free Dictionary REST API</h3>
-                    <div class="flex flex-wrap gap-1 mt-1 mb-1">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
-                            alt="Java" class="w-4 h-4">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
-                            alt="Spring Boot" class="w-4 h-4">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-                            alt="PostgreSQL" class="w-4 h-4">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
-                            alt="Docker" class="w-4 h-4">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg"
-                            alt="Redis" class="w-4 h-4">
-                    </div>
-                    <p class="text-gray-700 mb-4">
-                        Free, self-hostable dictionary REST API powered by processed Wiktionary data. Actively
-                        maintained with Apache 2.0 code licensing and CC BY-SA 4.0 data attribution.
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <a href="https://github.com/suvankar-mitra/free-dictionary-rest-api" target="_blank"
-                            rel="noopener" title="GitHub">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
-                                class="w-8 h-8" alt="GitHub">
-                        </a>
-                        <a href="https://api.suvankar.cc/dictionaryapi/v1/definitions/en/hello" target="_blank"
-                            rel="noopener" class="text-blue-500 hover:underline text-sm">
-                            Live API
-                        </a>
-                    </div>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
-                    <h3 class="text-xl font-semibold text-blue-600 mb-2">Portfolio Website</h3>
-                    <div class="flex flex-wrap gap-1 mt-1 mb-1">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
-                            alt="Java" class="w-4 h-4">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
-                            alt="Spring Boot" class="w-4 h-4">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                            alt="HTML" class="w-4 h-4">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-                            alt="Tailwind CSS" class="w-4 h-4">
-                    </div>
-                    <p class="text-gray-700 mb-4">
-                        Personal portfolio website built with Spring Boot, Thymeleaf, HTML, and Tailwind CSS.
-                    </p>
-                    <a href="https://github.com/suvankar-mitra/website" target="_blank" rel="noopener" title="GitHub">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
-                            class="w-8 h-8" alt="GitHub">
-                    </a>
+    <section class="content-section section-anchor" id="skills">
+        <div class="section-heading">
+            <div>
+                <p class="section-index">03 / TOOLKIT</p>
+                <h2>Tools &amp; technologies<span class="heading-period">.</span></h2>
+            </div>
+            <p class="section-note">The tools behind the work.</p>
+        </div>
+        <div class="skill-groups">
+            <div class="skill-row">
+                <h3>Languages</h3>
+                <div class="skill-list">
+                    <span>Java</span><span>Shell Script</span><span>SQL / T-SQL</span><span>C</span
+                ><span>Perl</span>
                 </div>
             </div>
-        </section>
+            <div class="skill-row">
+                <h3>Backend &amp; APIs</h3>
+                <div class="skill-list">
+                    <span>Spring Boot 3.x</span><span>Spring Security</span><span>Spring Data JPA</span
+                ><span>REST APIs</span><span>JWT</span><span>Hibernate</span>
+                </div>
+            </div>
+            <div class="skill-row">
+                <h3>Data, DevOps &amp; infrastructure</h3>
+                <div class="skill-list">
+                    <span>Sybase ASE</span><span>PostgreSQL</span><span>Stored Procedures</span
+                ><span>Database Performance</span><span>Temporal Data &amp; Versioning</span
+                ><span>Archival &amp; Purge</span><span>GitLab CI/CD</span><span>Terraform / IaC</span
+                ><span>Git</span><span>SVN / CVS</span><span>Linux / RHEL</span
+                ><span>Distributed Batch Processing</span><span>Idempotency &amp; Recovery</span
+                ><span>Production Reliability</span><span>Incident / RCA</span
+                ><span>Jira / ServiceNow</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="api" class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 border-blue-600 inline-block">Free Public APIs</h2>
-            <ul class="list-disc pl-6 space-y-2">
+    <section class="content-section section-anchor" id="experience">
+        <div class="section-heading">
+            <div>
+                <p class="section-index">04 / CAREER</p>
+                <h2>Professional experience<span class="heading-period">.</span></h2>
+            </div>
+        </div>
+        <article class="experience-card">
+            <div class="experience-header">
+                <div>
+                    <p class="experience-company">INFOSYS LTD. <span>· CLIENT: GOLDMAN SACHS</span></p>
+                    <h3>Technology Lead</h3>
+                    <p class="experience-location">Bengaluru, India</p>
+                </div>
+                <div class="experience-date">JUN 2015 — SEP 2026</div>
+            </div>
+            <p class="experience-summary">
+                SME and technical owner for the data snapshotting domain within the Global Order Settlement
+                System (GLOSS), a long-running financial platform in Private Wealth Management.
+            </p>
+            <ul class="experience-list">
                 <li>
-                    <a href="https://api.suvankar.cc/dictionaryapi/v1/definitions/en/example" target="_blank"
-                        rel="noopener" class="text-blue-500 hover:underline">Dictionary API</a> - A free,
-                    open-source API for accessing dictionary data, powered by Wiktionary.
-                    <pre
-                        class="bg-gray-100 rounded p-4 mt-2 text-xs overflow-x-auto border border-gray-200 max-h-[200px] overflow-y-auto">
-GET /dictionaryapi/v1/definitions/en/example
-
-Response:
-{
-  "word": "example",
-  "lang": "en",
-  "ipa": "/ɪɡˈzɑːm.pəl/",
-  "audioUrl": "https://upload.wikimedia.org/wikipedia/commons/transcoded/7/77/En-us-example.ogg/En-us-example.ogg.mp3",
-  "meanings": [
-    {
-      "partOfSpeech": "noun",
-      "senses": [
-        {
-          "glosses": [
-            "Something that serves to illustrate or explain a rule."
-          ],
-          "examples": [
-            "Plant breeding is always a numbers game.[...] A good example is mutations that disrupt seed dispersal, leaving the seeds on the heads long after they are ripe."
-          ]
-        }
-      ],
-      "synonyms": [
-        "exemplar",
-        "byspel",
-        "exemplificator",
-        "e.g.",
-        "exemplum"
-      ],
-      "etymologyText": "From Middle English example, exaumple, from Old French example, essaumple, from Latin exemplum."
-    }
-  ],
-  "attribute": {
-    "source": "Wiktionary",
-    "sourceUrl": "https://en.wiktionary.org",
-    "sourceLicense": "CC BY-SA 4.0"
-  }
-}
-                    </pre>
+                    Owned a two-dimensional temporal snapshotting model tracking settlement/account state by
+                    business-date validity and intraday snapshot timestamp, supporting current-date and as-of
+                    processing.
+                </li>
+                <li>
+                    Designed and maintained snapshot versioning and milestoning so historical state remained
+                    available across snapshot windows.
+                </li>
+                <li>
+                    Built archival/reactivation capabilities and global purge workflows spanning active and
+                    archived data across related transaction tables.
+                </li>
+                <li>
+                    Designed integer-ID purging and reclamation workflows with batch workers, idempotent
+                    execution, durable progress tracking, crash recovery, and validation before ranges were
+                    reused.
+                </li>
+                <li>
+                    Modernized 100+ legacy services, developed Java/Shell/SQL/C tooling, optimized stored
+                    procedures, reduced operational support incidents by 35%, and delivered GitLab CI/CD
+                    pipelines.
+                </li>
+                <li>
+                    Mentored and coordinated teams of 5–7 engineers across delivery, incident resolution,
+                    root-cause analysis, and stakeholder communication.
                 </li>
             </ul>
-        </section>
+        </article>
+    </section>
 
-        <section id="contact" class="mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 border-blue-600 inline-block">Contact Me</h2>
-            <p class="text-gray-600">
-                Reach me at
-                <a href="mailto:suvankar.for.work@gmail.com" class="text-blue-500 hover:underline">
-                    suvankar.for.work@gmail.com
-                </a>
+    <section class="content-section section-anchor" id="education">
+        <div class="section-heading">
+            <div>
+                <p class="section-index">05 / FOUNDATION</p>
+                <h2>Education<span class="heading-period">.</span></h2>
+            </div>
+        </div>
+        <div class="education-grid">
+            <article class="education-card">
+                <p class="card-index">2012 — 2015</p>
+                <h3>Master of Computer Applications <span>(MCA)</span></h3>
+                <p>Heritage Institute of Technology, Kolkata</p>
+                <div class="education-score"><span>GPA</span><strong>9.15</strong></div>
+            </article>
+            <article class="education-card">
+                <p class="card-index">2009 — 2012</p>
+                <h3>Bachelor of Science <span>(Hons.) in Mathematics</span></h3>
+                <p>Barasat Govt. College, Kolkata</p>
+                <div class="education-score"><span>Score</span><strong>73.75%</strong></div>
+            </article>
+        </div>
+        <article class="publication-card">
+            <p class="card-index">RESEARCH / IEEE / 2015</p>
+            <h3>
+                A Location-based Mobility Prediction Scheme for Post-Disaster Communication Network using DTN
+            </h3>
+            <p>
+                IEEE publication on location-based mobility prediction for post-disaster delay-tolerant
+                communication networks.
             </p>
-        </section>
+            <a href="https://ieeexplore.ieee.org/document/7083825" target="_blank" rel="noopener noreferrer"
+            >Read publication <span>↗</span></a
+            >
+        </article>
+    </section>
 
-        <footer class="text-center text-gray-500 py-6 border-t border-gray-200 text-sm">
-            &copy; 2026 Suvankar. All rights reserved.
-        </footer>
+    <section class="content-section section-anchor" id="projects">
+        <div class="section-heading">
+            <div>
+                <p class="section-index">06 / BUILT BY ME</p>
+                <h2>Open source &amp; personal projects<span class="heading-period">.</span></h2>
+            </div>
+            <p class="section-note">Small ideas, built into real software.</p>
+        </div>
+        <div class="project-grid">
+            <article class="project-card project-featured">
+                <div class="project-topline">
+                    <span class="project-type">OPEN SOURCE / 01</span>
+                    <span class="project-status">Public API</span>
+                </div>
+                <div class="project-meta">
+                            <span class="project-development-status">
+                                <span class="status-dot"></span>
+                                Active development
+                            </span>
+                </div>
+                <h3>Free Dictionary REST API</h3>
+                <p class="project-description">
+                    Free, self-hostable dictionary REST API powered by processed Wiktionary data. Actively
+                    maintained with Apache 2.0 code licensing and CC BY-SA 4.0 data attribution.
+                </p>
+                <div class="tech-tags">
+                    <span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>Docker</span
+                ><span>Redis</span>
+                </div>
+                <div class="project-links">
+                    <a
+                            href="https://github.com/suvankar-mitra/free-dictionary-rest-api"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                    >View source <span>↗</span></a
+                    ><a
+                        href="https://api.suvankar.cc/dictionaryapi/v1/definitions/en/hello"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                >Try live API <span>↗</span></a
+                >
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-topline">
+                    <span class="project-type">OPEN SOURCE / 02</span>
+                </div>
+                <h3>MoneyTrail</h3>
+                <p class="project-description">
+                    Self-hosted personal finance REST API in active development. Built with Java 21, Spring Boot
+                    3.5, Spring Security JWT, Spring Data JPA, PostgreSQL, Flyway, and Actuator. Implements
+                    double-entry bookkeeping with multi-user design. AGPL v3 licensed.
+                </p>
+                <div class="tech-tags">
+                    <span>Java 21</span><span>Spring Boot</span><span>PostgreSQL</span><span>Flyway</span
+                ><span>JWT</span>
+                </div>
+                <div class="project-links">
+                    <a
+                            href="https://github.com/suvankar-mitra/moneytrail"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                    >View source <span>↗</span></a
+                    >
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-topline"><span class="project-type">THIS SITE / 03</span></div>
+                <h3>Portfolio website</h3>
+                <p class="project-description">
+                    Personal portfolio website built with Spring Boot, Thymeleaf, HTML, and Tailwind CSS.
+                </p>
+                <div class="tech-tags">
+                    <span>Spring Boot</span><span>Thymeleaf</span><span>HTML</span><span>Tailwind CSS</span>
+                </div>
+                <div class="project-links">
+                    <a
+                            href="https://github.com/suvankar-mitra/website"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                    >View source <span>↗</span></a
+                    >
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-topline"><span class="project-type">OPEN SOURCE / 04</span></div>
+                <div class="project-meta">
+                            <span class="project-development-status">
+                                <span class="status-dot"></span>
+                                Active development
+                            </span>
+                </div>
+                <h3>API Portal</h3>
+                <p class="project-description">
+                    A developer-facing portal for discovering and exploring the APIs I build and maintain.
+                    Provides a central entry point to API documentation and usage information.
+                </p>
+                <div class="tech-tags">
+                    <span>Spring Boot</span><span>Developer experience</span><span>API documentation</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://api.suvankar.cc/" target="_blank" rel="noopener noreferrer"
+                    >Live portal <span>↗</span></a
+                    >
+                    <a
+                            href="https://github.com/suvankar-mitra/api-portal"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                    >View source <span>↗</span></a
+                    >
+                </div>
+            </article>
+        </div>
+    </section>
 
-    </div>
+    <section class="content-section section-anchor" id="api">
+        <div class="section-heading">
+            <div>
+                <p class="section-index">07 / DEVELOPER TOOLS</p>
+                <h2>Free public APIs<span class="heading-period">.</span></h2>
+            </div>
+            <p class="section-note">Useful endpoints, open to everyone.</p>
+        </div>
+        <article class="api-card">
+            <div class="api-intro">
+                <div class="api-icon">{ }</div>
+                <div>
+                    <p class="project-type">DICTIONARY API</p>
+                    <h3>Look up a word.</h3>
+                    <p>Open-source dictionary data, served through a simple REST endpoint.</p>
+                </div>
+            </div>
+            <div class="code-window">
+                <div class="code-toolbar">
+                    <span><i></i><i></i><i></i> <span class="code-caption">REQUEST</span></span>
+                    <button
+                            class="copy-button"
+                            type="button"
+                            data-copy="GET /dictionaryapi/v1/definitions/en/example"
+                            aria-label="Copy API endpoint"
+                    >
+                        Copy endpoint
+                    </button>
+                </div>
+                <pre><code><span class="code-method">GET</span> /dictionaryapi/v1/definitions/en/example</code></pre>
+            </div>
+            <div class="api-footer">
+                <span>JSON · Wiktionary data · CC BY-SA 4.0 attribution</span>
+                <div class="api-footer-links">
+                    <a href="https://api.suvankar.cc/" target="_blank" rel="noopener noreferrer"
+                    >API documentation <span>↗</span></a
+                    ><a
+                        href="https://api.suvankar.cc/dictionaryapi/v1/definitions/en/example"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                >Try the endpoint <span>↗</span></a
+                >
+                </div>
+            </div>
+        </article>
+    </section>
 
+    <section class="contact-section section-anchor" id="contact">
+        <div>
+            <p class="section-index">08 / SAY HELLO</p>
+            <h2>Have something<br />interesting to build<span class="heading-period">?</span></h2>
+        </div>
+        <div class="contact-action">
+            <p>For engineering opportunities, collaborations, or a good technical conversation.</p>
+            <a class="button button-primary" href="mailto:suvankar.for.work@gmail.com"
+            >Get in touch <span>↗</span></a
+            >
+            <p class="contact-email">suvankar.for.work@gmail.com</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <a class="footer-wordmark" href="#top">SM<span>.</span></a>
+        <p>Designed and built with care.</p>
+        <p>© 2026 Suvankar Mitra</p>
+    </footer>
+</main>
+<div class="toast" role="status" aria-live="polite"></div>
+<script>
+    (() => {
+        const root = document.documentElement;
+        const toggle = document.querySelector(".theme-toggle");
+        const label = document.querySelector(".theme-label");
+        const storageKey = "suvankar-portfolio-theme";
+        const systemDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+        let savedTheme = null;
+        try {
+            savedTheme = localStorage.getItem(storageKey);
+        } catch (_) {}
+        const initialTheme = savedTheme || (systemDark ? "dark" : "light");
+        root.dataset.theme = initialTheme;
+
+        function updateThemeButton() {
+            const dark = root.dataset.theme === "dark";
+            toggle.setAttribute("aria-pressed", String(dark));
+            toggle.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
+            label.textContent = dark ? "Light" : "Dark";
+        }
+        updateThemeButton();
+
+        toggle.addEventListener("click", () => {
+            root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
+            try {
+                localStorage.setItem(storageKey, root.dataset.theme);
+            } catch (_) {}
+            updateThemeButton();
+        });
+
+        const copyButton = document.querySelector(".copy-button");
+        const toast = document.querySelector(".toast");
+        copyButton.addEventListener("click", async () => {
+            const value = copyButton.dataset.copy;
+            try {
+                await navigator.clipboard.writeText(value);
+                copyButton.textContent = "Copied";
+                toast.textContent = "Endpoint copied to clipboard";
+            } catch (_) {
+                copyButton.textContent = "Select endpoint";
+                toast.textContent = value;
+            }
+            toast.classList.add("toast-visible");
+            window.setTimeout(() => toast.classList.remove("toast-visible"), 2200);
+            window.setTimeout(() => {
+                copyButton.textContent = "Copy endpoint";
+            }, 2200);
+        });
+    })();
+</script>
 </body>
-
 </html>
