@@ -17,4 +17,4 @@ USER springuser
 EXPOSE 8800
 
 # Run the app with some sane default JVM memory settings
-ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75.0", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-XX:MaxRAMPercentage=10.0", "-jar", "app.jar"]
