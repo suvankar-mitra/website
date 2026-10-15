@@ -971,13 +971,15 @@ button:focus-visible {
     text-decoration: underline;
 }
 
+
 /* Dictionary API live demo */
 .api-demo {
     margin-top: 1.5rem;
     padding: 1.25rem;
-    border: 1px solid var(--border-color, #dfe5df);
+    border: 1px solid var(--line);
     border-radius: 12px;
-    background: var(--surface-secondary, #f7f8f6);
+    background: var(--surface);
+    color: var(--text);
 }
 
 .api-demo-heading {
@@ -998,7 +1000,7 @@ button:focus-visible {
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
-    color: var(--text-secondary, #7d8780);
+    color: var(--muted);
     font-size: 0.8rem;
 }
 
@@ -1013,7 +1015,7 @@ button:focus-visible {
 .api-demo .try-form label {
     display: block;
     margin-bottom: 0.55rem;
-    color: var(--text-primary, #252b27);
+    color: var(--text);
     font-size: 0.9rem;
     font-weight: 600;
 }
@@ -1031,16 +1033,21 @@ button:focus-visible {
     min-height: 46px;
     flex: 1;
     padding: 0.7rem 0.85rem;
-    border: 1px solid var(--border-color, #dfe5df);
+    border: 1px solid var(--line-strong);
     border-radius: 8px;
-    background: var(--surface, #fff);
-    color: var(--text-primary, #252b27);
+    background: var(--bg);
+    color: var(--text);
     font: inherit;
     font-size: 0.9rem;
 }
 
+.api-demo .try-controls input::placeholder {
+    color: var(--muted);
+    opacity: 1;
+}
+
 .api-demo .try-controls input:focus-visible {
-    outline: 2px solid var(--accent, #3568ad);
+    outline: 2px solid var(--accent);
     outline-offset: 2px;
 }
 
@@ -1051,7 +1058,7 @@ button:focus-visible {
 
 .api-demo .try-hint {
     margin: 0.65rem 0 0;
-    color: var(--text-secondary, #7d8780);
+    color: var(--muted);
     font-size: 0.8rem;
     line-height: 1.5;
 }
@@ -1059,9 +1066,10 @@ button:focus-visible {
 .api-demo .try-result {
     margin-top: 1rem;
     overflow: hidden;
-    border: 1px solid var(--border-color, #dfe5df);
+    border: 1px solid var(--line);
     border-radius: 8px;
-    background: var(--surface, #fff);
+    background: var(--surface);
+    color: var(--text);
 }
 
 .api-demo .result-head {
@@ -1070,7 +1078,7 @@ button:focus-visible {
     justify-content: space-between;
     gap: 1rem;
     padding: 0.7rem 0.85rem;
-    border-bottom: 1px solid var(--border-color, #dfe5df);
+    border-bottom: 1px solid var(--line);
     font-size: 0.8rem;
 }
 
@@ -1079,6 +1087,7 @@ button:focus-visible {
     overflow: auto;
     margin: 0;
     padding: 1rem;
+    color: var(--text);
     font-size: 0.8rem;
     line-height: 1.6;
     white-space: pre-wrap;
@@ -1103,6 +1112,9 @@ button:focus-visible {
         width: 100%;
     }
 }
+
+
+
 
 @media (max-width: 760px) {
     .nav-shell {
