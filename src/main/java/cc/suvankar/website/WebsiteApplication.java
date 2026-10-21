@@ -5,7 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.*;
 
 @SpringBootApplication
-@ImportRuntimeHints(ThymeleafNativeHints.class)
 public class WebsiteApplication {
 
 	public static void main(String[] args) {
