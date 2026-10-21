@@ -1,5 +1,5 @@
 # Use a minimal official OpenJDK image
-FROM eclipse-temurin:21-jre
+FROM azul/zulu-openjdk:21-jre-headless
 
 # Create a non-root user
 RUN useradd -ms /bin/bash springuser
@@ -17,4 +17,4 @@ USER springuser
 EXPOSE 8800
 
 # Run the app with some sane default JVM memory settings
-ENTRYPOINT ["java", "-XX:MaxRAMPercentage=10.0", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-Xms16m", "-Xmx64m", "-XX:MaxMetaspaceSize=64m", "-Xss256k", "-jar", "app.jar"]
